@@ -30,7 +30,7 @@ namespace BankAccount
             return random.Next(100, 999).ToString();
         }
 
-        public static DateTime GetExpireDate(int years) => DateTime.Now.AddYears(1);
+        public static DateTime GetExpireDate(int years) => DateTime.Now.AddYears(years);
 
         public static double GetRandomBalance()
         {
