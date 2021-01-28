@@ -49,8 +49,8 @@ namespace BankAccount
                 Console.WriteLine("-------------------- ATM --------------------");
                 Console.ResetColor();
 
-                GetClienPan(out string PAN);
-                GetClienPin(out string PIN);
+                GetClientPan(out string PAN);
+                GetClientPin(out string PIN);
 
                 try
                 {
@@ -165,7 +165,7 @@ namespace BankAccount
                         }
                         else if (choice == 3)
                         {
-                            GetClienPan(out string toPan);
+                            GetClientPan(out string toPan);
 
                             InputAmount(out double amount);
 
@@ -244,7 +244,7 @@ Amount is {amount:C2}"});
             USD5 = 1, USD10, USD20, USD50, USD100, OTHER
         }
 
-        static void GetClienPan(out string PAN)
+        static void GetClientPan(out string PAN)
         {
             while (true)
             {
@@ -260,7 +260,7 @@ Amount is {amount:C2}"});
                 ClearScreen();
             }
         }
-        static void GetClienPin(out string PIN)
+        static void GetClientPin(out string PIN)
         {
             while (true)
             {
